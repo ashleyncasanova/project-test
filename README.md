@@ -1,0 +1,1 @@
+Sample repository to figure out how to create a project folder with a conda envionment through github.
