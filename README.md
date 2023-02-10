@@ -122,3 +122,11 @@ I closed down the server using control c.
 I wonder what the difference is between opening a notebook through vs code and opening it through the terminal.
 
 I am going to commit my new changes and see what happens.
+
+Everything was successfully comitted.
+
+Now I am going to try to import some tools into our notbook.
+
+importing pandas etc. was sucessful.
+
+I am going to commit new changes and deactivate the conda env.
