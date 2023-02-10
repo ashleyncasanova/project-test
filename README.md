@@ -60,3 +60,65 @@ Computer restarted on its own.
 Now there are only two changes in the staging area for bothe the .gitignore file and updates to the README.md file.
 
 I am going to commit these changes and see what happens.
+
+The above commit was successful.
+
+I am now switching to a new branch "env_2" where I will try to create the same conda environment. Now that my .gitignore file has been comitted, I hope git will ignore the newly created environment.
+
+Creation of conda environment was successful.
+
+I do not see any additional changes in the staging area.
+
+Next, I will try activating the conda environment using:
+
+```
+conda activate /Users/ashleycasanova/Desktop/sample_project/env
+```
+
+Activation was successful.
+
+Still no additional changes added to the staging area.
+
+To see a list of active environments we can run:
+
+```
+conda env list
+```
+
+This shows that we have a base environment and a conda environment located in our sample_project folder. The astrisk indicates that our newly created conda environment is active.
+
+I tried to run the command:
+
+```
+jupyter notebook
+```
+ 
+and received the following output: Jupyter command `jupyter-notebook` not found.
+
+I can use the graphical interface to add an .ipynb file which will run both python and markdown cells when it is running off of the local python kernal, but when I switch to the conda env kernal I receive the error: 
+
+`Running cells with '/Users/ashleycasanova/Desktop/sample_project/env/bin/python' requires the ipykernel package`
+
+Next, I will run the following:
+
+```
+conda install jupyter
+```
+
+Jupyter seems to have been installed sucessfully into our environment with no new changes added to the staging area!!
+
+Now we can rerun the cells in our jupyter notebook called "test.ipynb" and see what happens.
+
+The cells are now running as they did using the local kernal.
+
+Next, I want to try to run the code `jupyter notebook` ...
+
+If I were doing this through the regular terminal vs the integrated vs code terminal, this would open a jupyter notebook through your web browser. I want to see what happens when run through the integrated terminal.
+
+The same thing happened.
+
+I closed down the server using control c.
+
+I wonder what the difference is between opening a notebook through vs code and opening it through the terminal.
+
+I am going to commit my new changes and see what happens.
