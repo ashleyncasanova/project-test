@@ -130,3 +130,52 @@ Now I am going to try to import some tools into our notbook.
 importing pandas etc. was sucessful.
 
 I am going to commit new changes and deactivate the conda env.
+
+---
+
+[Renaming a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository)
+
+**Step 1: Rename Repository on Github**
+
+1. On GitHub.com, navigate to the main page of the repository.
+2. Under your repository name, click the settings tab.
+3. In the repository name field, type the new name of your repository.
+4. Click rename.
+
+**Step 2: Reset URL on Local Machine**
+
+When renaming a repository, all existing information, with the exception of the project sites URLs, is automatically redirected to the new name (e.g. Issues, Wikis, Stars, and Followers).
+
+In addition to redirecting web traffic, all `git clone`, `git fetch`, or `git push` operations targeting the previous location will continue to function as if made on the new location.
+
+It is recommended that you update any existing local clones to point to the new repository url using the command:
+
+`git remote set-url origin NEW-URL`
+
+>You can find the `NEW-URL` using the drop down menu of the `Code` tab. Alternately, it should follow the syntax: `https://github.com/user-name/new-name.git`
+
+>Run this command in the terminal, after `cd`-ing into the directory you wish to rename.
+
+**Step 3: Rename folder on computer**
+
+1. In the terminal `cd` out of directory you are changing and run the following command: 
+
+`mv old_name new_name`
+
+**Step 4: Check**
+
+We can check the remote url using:
+
+`git config —get remote.origin.url`
+> returns the remote url
+
+`git remote -v`
+> to see all of your remote urls
+
+`git remote show origin`
+> for more info about the remote repo
+
+Or 
+
+`git remote show [remote-name] command`
+> to get more details about a particular repo
